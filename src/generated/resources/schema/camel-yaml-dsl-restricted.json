@@ -71,6 +71,18 @@
         "properties" : {
           "constant" : {
             "$ref" : "#/items/definitions/org.apache.camel.model.language.ConstantExpression"
+          },
+          "exchange-property" : {
+            "$ref" : "#/items/definitions/org.apache.camel.model.language.ExchangePropertyExpression"
+          },
+          "exchangeProperty" : {
+            "$ref" : "#/items/definitions/org.apache.camel.model.language.ExchangePropertyExpression"
+          },
+          "header" : {
+            "$ref" : "#/items/definitions/org.apache.camel.model.language.HeaderExpression"
+          },
+          "jq" : {
+            "$ref" : "#/items/definitions/org.apache.camel.model.language.JqExpression"
           }
         }
       },
@@ -250,6 +262,18 @@
         "properties" : {
           "constant" : {
             "$ref" : "#/items/definitions/org.apache.camel.model.language.ConstantExpression"
+          },
+          "exchange-property" : {
+            "$ref" : "#/items/definitions/org.apache.camel.model.language.ExchangePropertyExpression"
+          },
+          "exchangeProperty" : {
+            "$ref" : "#/items/definitions/org.apache.camel.model.language.ExchangePropertyExpression"
+          },
+          "header" : {
+            "$ref" : "#/items/definitions/org.apache.camel.model.language.HeaderExpression"
+          },
+          "jq" : {
+            "$ref" : "#/items/definitions/org.apache.camel.model.language.JqExpression"
           }
         }
       },
