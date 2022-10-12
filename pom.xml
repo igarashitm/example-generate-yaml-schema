@@ -68,7 +68,7 @@
                         </goals>
                         <configuration>
                             <kebabCase>true</kebabCase>
-                            <outputFile>src/generated/resources/schema/camel-yaml-dsl-restricted.json</outputFile>
+                            <outputFile>src/generated/resources/schema/camel-yaml-dsl-restricted-banned.json</outputFile>
                             <bannedDefinitions>
                                 <bannedDefinition>org.apache.camel.model.AggregateDefinition</bannedDefinition>
                                 <bannedDefinition>org.apache.camel.model.BeanDefinition</bannedDefinition>
@@ -167,81 +167,19 @@
                                 <!-- <bannedDefinition>org.apache.camel.model.WhenDefinition</bannedDefinition> -->
                                 <bannedDefinition>org.apache.camel.model.WhenSkipSendToEndpointDefinition</bannedDefinition>
                                 <bannedDefinition>org.apache.camel.model.WireTapDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.BlacklistServiceCallServiceFilterConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.CachingServiceCallServiceDiscoveryConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.CombinedServiceCallServiceDiscoveryConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.CombinedServiceCallServiceFilterConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.ConsulServiceCallServiceDiscoveryConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.CustomServiceCallServiceFilterConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.DefaultServiceCallServiceLoadBalancerConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.DnsServiceCallServiceDiscoveryConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.HealthyServiceCallServiceFilterConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.KubernetesServiceCallServiceDiscoveryConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.PassThroughServiceCallServiceFilterConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.ServiceCallConfigurationDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.ServiceCallDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.ServiceCallExpressionConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.ServiceCallServiceChooserConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.ServiceCallServiceDiscoveryConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.ServiceCallServiceFilterConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.ServiceCallServiceLoadBalancerConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.StaticServiceCallServiceDiscoveryConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.cloud.ZooKeeperServiceCallServiceDiscoveryConfiguration</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.config.BatchResequencerConfig</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.config.StreamResequencerConfig</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.ASN1DataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.Any23DataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.AvroDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.BarcodeDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.Base64DataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.BindyDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.CBORDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.CryptoDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.CsvDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.CustomDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.DataFormatsDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.FhirJsonDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.FhirXmlDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.FlatpackDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.GrokDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.GzipDeflaterDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.HL7DataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.IcalDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.JacksonXMLDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.JaxbDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.JsonApiDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.JsonDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.LZFDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.MimeMultipartDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.PGPDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.ProtobufDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.RssDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.SoapDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.SyslogDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.TarFileDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.ThriftDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.TidyMarkupDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.UniVocityCsvDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.UniVocityFixedDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.UniVocityHeader</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.UniVocityTsvDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.XMLSecurityDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.XStreamDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.YAMLDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.YAMLTypeFilterDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.ZipDeflaterDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.dataformat.ZipFileDataFormat</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.errorhandler.DeadLetterChannelDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.errorhandler.DefaultErrorHandlerDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.errorhandler.ErrorHandlerRefDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.errorhandler.JtaTransactionErrorHandlerDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.errorhandler.SpringTransactionErrorHandlerDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.errorhandler.NoErrorHandlerDefinition</bannedDefinition>
+                                <bannedDefinition>org.apache.camel.model.cloud.*</bannedDefinition>
+                                <bannedDefinition>org.apache.camel.model.config.*</bannedDefinition>
+                                <bannedDefinition>org.apache.camel.model.dataformat.*</bannedDefinition>
+                                <bannedDefinition>org.apache.camel.model.errorhandler.*</bannedDefinition>
+                                <!-- <bannedDefinition>org.apache.camel.model.language.ConstantExpression</bannedDefinition> -->
                                 <bannedDefinition>org.apache.camel.model.language.CSimpleExpression</bannedDefinition>
                                 <bannedDefinition>org.apache.camel.model.language.DatasonnetExpression</bannedDefinition>
+                                <!-- <bannedDefinition>org.apache.camel.model.language.ExchangePropertyExpression</bannedDefinition> -->
                                 <bannedDefinition>org.apache.camel.model.language.GroovyExpression</bannedDefinition>
+                                <!-- <bannedDefinition>org.apache.camel.model.language.HeaderExpression</bannedDefinition> -->
                                 <bannedDefinition>org.apache.camel.model.language.Hl7TerserExpression</bannedDefinition>
                                 <bannedDefinition>org.apache.camel.model.language.JoorExpression</bannedDefinition>
+                                <!-- <bannedDefinition>org.apache.camel.model.language.JqExpression</bannedDefinition> -->
                                 <bannedDefinition>org.apache.camel.model.language.JsonPathExpression</bannedDefinition>
                                 <bannedDefinition>org.apache.camel.model.language.LanguageExpression</bannedDefinition>
                                 <bannedDefinition>org.apache.camel.model.language.MethodCallExpression</bannedDefinition>
@@ -255,43 +193,10 @@
                                 <bannedDefinition>org.apache.camel.model.language.XPathExpression</bannedDefinition>
                                 <bannedDefinition>org.apache.camel.model.language.XQueryExpression</bannedDefinition>
                                 <bannedDefinition>org.apache.camel.model.language.XMLTokenizerExpression</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.loadbalancer.CustomLoadBalancerDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.loadbalancer.FailoverLoadBalancerDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.loadbalancer.RandomLoadBalancerDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.loadbalancer.RoundRobinLoadBalancerDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.loadbalancer.StickyLoadBalancerDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.loadbalancer.TopicLoadBalancerDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.loadbalancer.WeightedLoadBalancerDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.ApiKeyDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.BasicAuthDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.BearerTokenDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.DeleteDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.GetDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.HeadDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.MutualTLSDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.OAuth2Definition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.OpenIdConnectDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.ParamDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.PatchDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.PostDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.PutDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.ResponseHeaderDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.ResponseMessageDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.RestBindingDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.RestConfigurationDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.RestDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.RestPropertyDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.SecurityDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.RestsDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.rest.RestSecuritiesDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.transformer.CustomTransformerDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.transformer.DataFormatTransformerDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.transformer.EndpointTransformerDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.transformer.TransformersDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.validator.CustomValidatorDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.validator.EndpointValidatorDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.validator.PredicateValidatorDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.validator.ValidatorsDefinition</bannedDefinition>
+                                <bannedDefinition>org.apache.camel.model.loadbalancer.*</bannedDefinition>
+                                <bannedDefinition>org.apache.camel.model.rest.*</bannedDefinition>
+                                <bannedDefinition>org.apache.camel.model.transformer.*</bannedDefinition>
+                                <bannedDefinition>org.apache.camel.model.validator.*</bannedDefinition>
                                 <bannedDefinition>org.apache.camel.dsl.yaml.deserializers.BeansDeserializer</bannedDefinition>
                                 <bannedDefinition>org.apache.camel.dsl.yaml.deserializers.ErrorHandlerBuilderDeserializer</bannedDefinition>
                                 <bannedDefinition>org.apache.camel.dsl.yaml.deserializers.NamedBeanDefinition</bannedDefinition>
