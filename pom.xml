@@ -87,7 +87,7 @@
                                 <bannedDefinition>org.apache.camel.model.FaultToleranceConfigurationDefinition</bannedDefinition>
                                 <!-- <bannedDefinition>org.apache.camel.model.FilterDefinition</bannedDefinition> -->
                                 <bannedDefinition>org.apache.camel.model.FinallyDefinition</bannedDefinition>
-                                <bannedDefinition>org.apache.camel.model.FromDefinition</bannedDefinition>
+                                <!-- <bannedDefinition>org.apache.camel.model.FromDefinition</bannedDefinition> -->
                                 <bannedDefinition>org.apache.camel.model.GlobalOptionDefinition</bannedDefinition>
                                 <bannedDefinition>org.apache.camel.model.GlobalOptionsDefinition</bannedDefinition>
                                 <bannedDefinition>org.apache.camel.model.IdempotentConsumerDefinition</bannedDefinition>
