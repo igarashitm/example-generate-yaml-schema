@@ -68,6 +68,7 @@
                         </goals>
                         <configuration>
                             <kebabCase>true</kebabCase>
+			    <additionalProperties>false</additionalProperties>
                             <outputFile>src/generated/resources/schema/camel-yaml-dsl-restricted-banned.json</outputFile>
                             <bannedDefinitions>
                                 <bannedDefinition>org.apache.camel.model.AggregateDefinition</bannedDefinition>
@@ -178,6 +179,7 @@
                                 <bannedDefinition>org.apache.camel.model.language.GroovyExpression</bannedDefinition>
                                 <!-- <bannedDefinition>org.apache.camel.model.language.HeaderExpression</bannedDefinition> -->
                                 <bannedDefinition>org.apache.camel.model.language.Hl7TerserExpression</bannedDefinition>
+                                <bannedDefinition>org.apache.camel.model.language.JavaScriptExpression</bannedDefinition>
                                 <bannedDefinition>org.apache.camel.model.language.JoorExpression</bannedDefinition>
                                 <!-- <bannedDefinition>org.apache.camel.model.language.JqExpression</bannedDefinition> -->
                                 <bannedDefinition>org.apache.camel.model.language.JsonPathExpression</bannedDefinition>
